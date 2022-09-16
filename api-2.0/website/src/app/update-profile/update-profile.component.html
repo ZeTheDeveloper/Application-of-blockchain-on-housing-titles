@@ -1,0 +1,35 @@
+<div class="row">
+    <form class="row" [formGroup]="updateForm" (ngSubmit)="onSubmit()" ngNativeValidate>
+        <div class="col-md-6 border-right">
+            <div class="p-3 py-5">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h4 class="text-right">Profile Settings</h4>
+                </div>
+                <div class="row mt-2">
+                    <!-- <div class="col-md-12"><label class="labels">Name (fixed)</label><input type="text" class="form-control" placeholder="name" value="this.user.username" ngModel [ngModelOptions]="{standalone: true}" #username="ngModel" [(ngModel)]="this.user.username" value="this.user.username" required readonly disabled></div><br> -->
+                    <div class="col-md-12 mt-3"><label class="labels">Identity Number (fixed)</label><input type="text" class="form-control" value="this.user.identityNumber" ngModel [ngModelOptions]="{standalone: true}" #identityNumber="ngModel" [(ngModel)]="this.user.identityNumber" value="this.user.identityNumber" required readonly disabled></div><br>
+
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-12 mt-3"><label class="labels">Current Living Address</label><input type="text" class="form-control" placeholder="enter address" value="this.user.address" ngModel [ngModelOptions]="{standalone: true}" #address="ngModel" [(ngModel)]="this.user.address" value="this.user.address" required></div><br>
+
+                    <div class="col-md-12 mt-3"><label class="labels">Postcode</label><input type="text" class="form-control" placeholder="enter post code" value="this.user.postCode" ngModel [ngModelOptions]="{standalone: true}" #postCode="ngModel" [(ngModel)]="this.user.postCode" value="this.user.postCode" required></div><br>
+                    <div class="col-md-12 mt-3"><label class="labels">State</label><input type="text" class="form-control" placeholder="enter state" value="this.user.state" ngModel [ngModelOptions]="{standalone: true}" #state="ngModel" [(ngModel)]="this.user.state" value="this.user.state" required></div><br>
+                    <div class="col-md-12 mt-3"><label class="labels">Area</label><input type="text" class="form-control" placeholder="enter area" value="this.user.area" ngModel [ngModelOptions]="{standalone: true}" #area="ngModel" [(ngModel)]="this.user.area" value="this.user.area" required></div><br>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-12 mt-3"><label class="labels">Country</label><input type="text" class="form-control" placeholder="enter country" value="this.user.country" ngModel [ngModelOptions]="{standalone: true}" #country="ngModel" [(ngModel)]="this.user.country" value="this.user.country" required></div><br>
+                    
+                </div>
+                <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="submit">Save Profile</button></div><br>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="p-3 py-5">
+                <div class="d-flex justify-content-between align-items-center experience"><span>Contact Information</span></div><br>
+                <div class="col-md-12"><label class="labels">Phone Number (01XXXXXX)</label><input type="number" class="form-control" placeholder="enter phone number" value="this.user.mobileNumber" ngModel [ngModelOptions]="{standalone: true}" #mobileNumber="ngModel" [(ngModel)]="this.user.mobileNumber" value="this.user.mobileNumber" required></div> <br>
+                <div class="col-md-12"><label class="labels">Email Address</label><input type="email" class="form-control" placeholder="enter email address" value="this.user.email" ngModel [ngModelOptions]="{standalone: true}" #email="ngModel" [(ngModel)]="this.user.email" value="this.user.email" required></div>
+            </div>
+        </div>
+    </form>
+</div>

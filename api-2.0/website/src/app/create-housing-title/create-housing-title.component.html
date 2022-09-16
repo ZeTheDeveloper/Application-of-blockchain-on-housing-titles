@@ -1,0 +1,61 @@
+<div class="col-md-12 border-right">
+    <div class="p-3 py-5">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h4 class="text-right">Store Housing Titles (Insert Info)</h4>
+        </div>
+        <form class="store" [formGroup]="createForm" (ngSubmit)="onSubmit()" ngNativeValidate>
+            <div class="row mt-2">
+                <div class="col-md-12">
+                    <label class="labels">Title's ID</label>
+                    <input type="text" name="ID" ngModel [ngModelOptions]="{standalone: true}" [(ngModel)]="this.housingTitle.ID" #ID="ngModel" class="form-control" placeholder="enter ID" value="this.housingTitle.ID" required>
+                </div>
+                <div class="col-md-12">
+                    <label class="labels">Owner's Identity Number</label>
+                    <input type="number" name="identityNum" ngModel  [ngModelOptions]="{standalone: true}" #identityNum="ngModel"  [(ngModel)]="this.housingTitle.identityNum" class="form-control" placeholder="enter identity number" value="this.housingTitle.identityNum" required>
+                </div>
+                <div class="col-md-12">
+                    <label class="labels">Owner's Name</label>
+                    <input type="text" name="name" [ngModelOptions]="{standalone: true}" ngModel #name="ngModel" [(ngModel)]="this.housingTitle.name" class="form-control" placeholder="enter name" value="this.housingTitle.name" required></div>
+            </div>
+            <div class="row mt-3">  
+                <div class="col-md-12">
+                    <label class="labels">Title's Full Address</label>
+                    <input type="text" name="address" ngModel  [ngModelOptions]="{standalone: true}" #address="ngModel" [(ngModel)]="this.housingTitle.address" class="form-control" placeholder="enter address" value="this.housingTitle.address" required>
+                </div>
+                <div class="col-md-12">
+                    <label class="labels">Title's State</label>
+                    <input type="text" name="state" ngModel [ngModelOptions]="{standalone: true}" #state="ngModel" class="form-control" [(ngModel)]="this.housingTitle.state" placeholder="enter state" value="this.housingTitle.state" required>
+                </div>
+            </div>
+            <div class="wrapper">
+                <header>Upload Housing Title PDF (Filename: XXXXXX-XX-XXXX)</header>
+                <form action="#" [formGroup]="uploadForm" (click)="fileInput.click()" ngNativeValidate>
+                    <input type="file" class="file-input" #fileInput name="fileInput" (change)="handleFileInput($any($event).target.files)" hidden required/>
+                    <fa-icon [icon]="upload"></fa-icon>
+                    <p>Browse File to Upload</p>
+                </form>
+                <section class="upload-area" *ngIf="this.fileUploaded">
+                    <li class="row">
+                        <div class="content row col-10">
+                            <fa-icon [icon]="fileI" class="col-2"></fa-icon>
+                            <div class="details col-10">
+                                <span class="name">{{this.fileName}}</span>
+                                <br>
+                                <span class="size">{{this.fileSize}} KB</span>
+                            </div>
+                        </div>
+                        <fa-icon [icon]="check" class="success col-2"></fa-icon>
+                    </li>
+                </section>
+                <section class="show-hash" *ngIf="this.hash">
+                    <li class="row">
+                        <div class="hash">Generated Hash Value:</div>
+                        <div class="hash-value">{{this.hash}}</div>
+                    </li>
+                </section>
+            </div>
+            <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="submit">Store Into Blockchain</button></div>
+        </form>
+    </div>
+</div>
+

@@ -1,0 +1,37 @@
+<div class="container rounded bg-white mt-5 mb-5">
+    <div class="row">
+        <div class="col-md-4 border-right">
+            <div class="d-flex flex-column align-items-center text-center p-3 py-5">
+                <img class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg">
+                <span class="font-weight-bold">{{this.username}}</span>
+                <span class="text-black-50">{{this.email}}</span>
+                <br>
+                <div class="labels">
+                    <div class="label" (click)="this.action='profile'"><fa-icon [icon]="user"></fa-icon> Profile</div>
+                    <div class="label" (click)="this.action='updateProfile'"><fa-icon [icon]="userPlus"></fa-icon> Update Profile</div>
+                    <div class="label" (click)="this.action='changePassword'"><fa-icon [icon]="passwordI"></fa-icon> Change Password</div>
+                    <div class="label" (click)="this.action='view'"><fa-icon [icon]="file"></fa-icon> View Housing Titles</div>
+                    <div class="label" (click)="logout()"><fa-icon [icon]="logoutI"></fa-icon>Logout</div>
+                </div>
+                <span> </span>
+            </div>
+        </div>
+        <div class="col-md-8 border-right">
+            <div *ngIf="this.action === 'profile'">
+                <app-profile></app-profile>
+            </div>
+            <div *ngIf="this.action === 'updateProfile'">
+                <app-update-profile></app-update-profile>
+            </div>
+            <div *ngIf="this.action === 'view'">
+                <app-view-housing-title></app-view-housing-title>
+            </div>
+            <div *ngIf="this.action === 'verify'">
+                <app-verify-housing-title></app-verify-housing-title>
+            </div>
+            <div *ngIf="this.action === 'changePassword'">
+                <app-change-password></app-change-password>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,178 @@
+.wrapper{
+    width: 430px;
+    padding-top: 40px;
+    background: #fff;
+    border-radius: 5px;
+    /* user-select: none; */
+}
+
+.wrapper-header{
+    color: #6990f2;
+    font-size: 27px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.wrapper form{
+    height: 167px;
+    display: flex;
+    margin: 30px 0px !important;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 2px dashed #6990f2;
+}
+
+form :where(i, p){
+    color: #6990f2
+}
+
+form i{
+    font-size: 50px;
+}
+
+form p{
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+section .row{
+    background: #e9f0ff;
+    margin-bottom: 10px;
+    list-style: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .row i{
+    font-size: 30px;
+    color: #6990f2;
+}
+
+.progress-area .row .content{
+    width: 100%;
+    margin-left: 15px;
+}
+
+section .details span{
+    font-size: 14px;
+}
+
+.progress-area .details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.progress-area .progress-bar{
+    height: 6px;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 4px;
+    border-radius: 30px;
+}
+
+.progress-area .progress{
+    height: 100%;
+    width: 0%;
+    background: #6990f2;
+    border-radius: inherit;
+}
+
+.uploaded-area{
+    max-height: 150px;
+    overflow-y: scroll;
+}
+
+.uploaded-area::-webkit-scrollbar{
+    width: 0px;
+}
+
+.uploaded-area .row .content{
+    display: flex;
+    align-items: center;
+}
+
+.uploaded-area .row .details{
+    display: flex;
+    margin-left: 15px;
+    flex-direction: column;
+}
+
+.uploaded-area .details .size{
+    font-size: 11px;
+    color: #404040;
+}
+
+.success{
+    color: rgb(55, 128, 0);
+}
+
+.hash{
+    display: block;
+    /* overflow: scroll; */
+    /* overflow-x: scroll; */
+}
+
+.hash-value{
+    padding: 0px;
+    margin-left: 14px;
+    overflow: scroll;
+}
+
+body {
+    background: rgb(99, 39, 120)
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #BA68C8
+}
+
+.profile-button {
+    background: rgb(99, 39, 120);
+    box-shadow: none;
+    border: none
+}
+
+.profile-button:hover {
+    background: #682773
+}
+
+.profile-button:focus {
+    background: #682773;
+    box-shadow: none
+}
+
+.profile-button:active {
+    background: #682773;
+    box-shadow: none
+}
+
+.back:hover {
+    color: #682773;
+    cursor: pointer
+}
+
+.labels {
+    font-size: 11px;
+    padding: 10px 0px;
+}
+
+.add-experience:hover {
+    background: #BA68C8;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #BA68C8
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

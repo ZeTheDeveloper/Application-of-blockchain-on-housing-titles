@@ -1,0 +1,54 @@
+<div class="wrapper">
+    <header>Upload File To Verify Housing Title</header>
+    <form action="#" (click)="fileInput.click()">
+        <input type="file" class="file-input" (change)="handleFileInput($any($event).target.files)" #fileInput hidden/>
+        <fa-icon [icon]="upload"></fa-icon>
+        <p>Browse File to Upload</p>
+    </form>
+    <section class="progress-area">
+        
+    </section>
+    <section class="upload-area" *ngIf="this.fileToUpload">
+        <li class="row">
+            <div class="content row col-10">
+                <fa-icon [icon]="file" class="col-2"></fa-icon>
+                <div class="details col-10">
+                    <span class="name">{{this.fileName}} (Uploaded)</span>
+                    <br>
+                    <span class="size">{{this.fileSize}} KB</span>
+                </div>
+            </div>
+            <fa-icon [icon]="check" class="success col-2"></fa-icon>
+        </li>
+    </section>
+    <section class="show-hash" *ngIf="this.hash">
+        <li class="row">
+            <div class="hash">Hash Value:</div>
+            <div class="hash-value">{{this.hash}}</div>
+        </li>
+    </section>
+    <section class="upload-area" *ngIf="this.fileToUpload">
+        <li class="row" *ngIf="this.exist">
+            <div class="content row col-10">
+                <fa-icon [icon]="file" class="col-2"></fa-icon>
+                <div class="details col-10">
+                    <!-- <span class="name">{{this.fileName}}</span>
+                    <br> -->
+                    <span class="size">The hash of this file is found in our blockchain. It is a valid title!</span>
+                </div>
+            </div>
+            <fa-icon [icon]="check" class="success col-2"></fa-icon>
+        </li>
+        <li class="row" *ngIf="!this.exist">
+            <div class="content row col-10">
+                <fa-icon [icon]="file" class="col-2"></fa-icon>
+                <div class="details col-10">
+                    <!-- <span class="name">{{this.fileName}}</span>
+                    <br> -->
+                    <span class="size">The hash of this file is not found in our blockchain. It is not valid title!</span>
+                </div>
+            </div>
+            <fa-icon [icon]="times" class="fail col-2"></fa-icon>
+        </li>
+    </section>
+</div>

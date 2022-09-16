@@ -1,0 +1,28 @@
+<div *ngIf="this.role === 'owner'">
+    <div *ngFor="let title of this.appendedAllTitle; let i = index">
+        <h3>Title {{i + 1}}</h3>
+        <ng2-pdfjs-viewer pdfSrc={{title}} viewerId="MyUniqueID" >
+        </ng2-pdfjs-viewer>
+        <br>
+        <br>
+        <br>
+
+    </div>
+</div>
+
+<div *ngIf="this.role === 'admin'">
+    <div *ngFor="let title of this.allAdminTitle; let i = index">
+        <div class="row">
+            <h3 class="col-6">Title ID: {{title.ID}}</h3>
+            <h3 class="col-6">Title Owner: {{title.ownerName}}</h3>
+        </div>
+        <br>
+        <h3>Address: {{title.fullAddress}}</h3>
+        <ng2-pdfjs-viewer pdfSrc={{title.fileName}} viewerId="MyUniqueID" >
+        </ng2-pdfjs-viewer>
+        <br>
+        <br>
+        <br>
+
+    </div>
+</div>

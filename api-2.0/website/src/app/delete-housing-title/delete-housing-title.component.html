@@ -1,0 +1,27 @@
+<form class="row" [formGroup]="searchForm" (ngSubmit)="onSearch(address.value)">
+    <div class="col">
+        <div class="p-3 py-5">
+            <div class="row mt-2">
+                <div class="row"> 
+                    <div class="col-md-10 mt-3"><input type="text" placeholder="Search Housing Title by Address" #address class="form-control" value="" ></div>
+                    <button class="col-md-2 mt-3" type="submit"><fa-icon [icon]="searchButton"></fa-icon></button>
+                </div>   
+            </div>
+            
+        </div>
+    </div>
+</form>
+
+
+<div *ngIf="this.foundTitle">
+    <div class="row"><h3 class="col-6">Title ID: {{this.foundTitle.ID}}</h3><h3 class="col-6 ownerName">Owner: {{this.foundTitle.ownerName}}</h3></div>
+    <div class="row">
+        <h3 class="col-md-8">Address: {{this.foundTitle.fullAddress}}</h3><button class="col-md-4 trash-button" (click)="onDelete(this.foundTitle.ID, this.foundTitle.fileName)"><fa-icon [icon]="trashButton"></fa-icon></button>
+    </div>
+    <br><br>
+    <ng2-pdfjs-viewer pdfSrc={{this.foundTitle.fileName}} viewerId="MyUniqueID" >
+    </ng2-pdfjs-viewer>
+    <br>
+    <br>
+    <br>
+</div>
