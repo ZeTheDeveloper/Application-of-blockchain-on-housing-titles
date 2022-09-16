@@ -1,2 +1,0 @@
-Installed chaincodes on peer:
-Package ID: housingtitle_1:5ae4650b883100b0770fcf0d8c50a3f3edfd9c366fae3ed2c4e25183d5e70b19, Label: housingtitle_1
