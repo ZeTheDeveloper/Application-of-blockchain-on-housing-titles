@@ -3,14 +3,16 @@ Storing housing titles into Hyperledger Fabric Network to ensure easy storing an
 
 <h2> Hyperledger Fabric Framework </h2>
 1. Configure WSL and Ubuntu for development of Hyperledger Fabric.
+
 2. Creating blockchain peers, orderers (with certificate and private key) and genesis block.
+
 3. Start the blockchain network with Docker.
 
 ![image](https://user-images.githubusercontent.com/98612606/192152174-a2422747-9526-4106-a834-cbaa83c0b482.png)
 
-5. Creating channel (communication medium between peers and with client side) with shell script.
-6. Writing chaincode (smart contract) written in Golang.
-7. Deploying chaicode (smart contract) in the channel with shell script.
+4. Creating channel (communication medium between peers and with client side) with shell script.
+5. Writing chaincode (smart contract) written in Golang.
+6. Deploying chaicode (smart contract) in the channel with shell script.
 
 
 <h2> Node.js </h2>
