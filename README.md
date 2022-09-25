@@ -38,3 +38,32 @@ Landowners and Land Administrator can login into their respective account after 
 ![image](https://user-images.githubusercontent.com/98612606/192155371-5ce6a7a0-7619-4947-a9cd-1546d7354b77.png)
 
 Landowners and Land Administrator can update their user profile. The fields comes with relevant validation (required, email etc.)
+ <br />
+ 
+3. View Profile
+
+![image](https://user-images.githubusercontent.com/98612606/192155992-bfdca71b-fdfe-4da4-8c2a-7830346f9fba.png)
+
+Landowners and Land Administrator can view their profile with latest updated information.
+ <br />
+ 
+4. Store Land Title into blockchain network
+
+![image](https://user-images.githubusercontent.com/98612606/192156361-b316dd91-c62f-4b34-a923-61ab4c427462.png)
+
+Land administrator can store land title into the network by inputing relevant information of landowner and update PDF file of the land title. The content of the PDF will be converted into hash by using SHA-256 algorithm. Other than that, the PDF file will be stored in server machine for displaying later.
+<br />
+
+
+5. View All Land Title
+
+![image](https://user-images.githubusercontent.com/98612606/192156388-cbb69f7a-7f05-40f7-92ef-d61bbec1bca9.png)
+
+Land administrator can view all land title stored into the blockchain network. With the pdf viewer, the can print the hardcopy and download the softcopy into server machine.
+<br />
+
+6. Verify Land Title
+
+![image](https://user-images.githubusercontent.com/98612606/192156519-dc416322-609a-4be9-a9fd-573a2ee6d0aa.png)
+
+Land administrator can check the validity of a land title by uploading the PDF on the website. If the hash of the uploaded land title is found in the blockchain, it means the contents are valid, else it means the contents are invalid.
