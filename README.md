@@ -5,6 +5,7 @@ Storing housing titles into Hyperledger Fabric Network to ensure easy storing an
 1. Configure WSL and Ubuntu for development of Hyperledger Fabric.
 2. Creating blockchain peers, orderers (with certificate and private key) and genesis block.
 3. Start the blockchain network with Docker.
+
 ![image](https://user-images.githubusercontent.com/98612606/192152174-a2422747-9526-4106-a834-cbaa83c0b482.png)
 
 5. Creating channel (communication medium between peers and with client side) with shell script.
