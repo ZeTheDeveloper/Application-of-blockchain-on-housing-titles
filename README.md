@@ -2,7 +2,7 @@
 Storing land titles into Hyperledger Fabric Network to ensure easy storing and verification.
 
 <h2> Hyperledger Fabric Framework </h2>
-1. Configure WSL and Ubuntu for development of Hyperledger Fabric.
+1. Configure WSL and Ubuntu for development of Hyperledger Fabric. </n>
 2. Creating blockchain peers, orderers (with certificate and private key) and genesis block.
 3. Start the blockchain network with Docker.
 
