@@ -18,7 +18,7 @@ Storing land titles into Hyperledger Fabric Network to ensure easy storing and v
 ![image](https://user-images.githubusercontent.com/98612606/192154658-87b7a79a-798a-49fe-b377-9831d5680732.png)
 <br />
 
-Node.js is used as server to communicate with Hyperledger Farbic network through Fabric SDK and CouchDB for user authentication. Endpoints are configured in Node.js for various processes. (login, logout, store titles into blockchain etc.)
+Node.js is used as server to communicate with Hyperledger Farbic network through Fabric SDK and CouchDB for user authentication. Endpoints are configured in Node.js for various processes. (login, logout, store titles into blockchain etc.). Other than that, File Sytem Wallet are created on land administrator local machine therefore only machine with certified public & private key can communicate with the Hyperledger Fabric network.
 
 
 <h2> Frontend </h2>
@@ -67,3 +67,35 @@ Land administrator can view all land title stored into the blockchain network. W
 ![image](https://user-images.githubusercontent.com/98612606/192156519-dc416322-609a-4be9-a9fd-573a2ee6d0aa.png)
 
 Land administrator can check the validity of a land title by uploading the PDF on the website. If the hash of the uploaded land title is found in the blockchain, it means the contents are valid, else it means the contents are invalid.
+<br />
+
+7. Delete Land Title
+
+![image](https://user-images.githubusercontent.com/98612606/192157014-a35b0f10-fbb9-459e-b675-ae4641da38af.png)
+
+Land administrator can search the land title with its address and mark it as deleted in the blockchain. It will then be removed from world state database (CouchDB) and it won't be shown again as a title in the web application.
+<br />
+
+8. Create Landowner Account
+
+![image](https://user-images.githubusercontent.com/98612606/192157387-f453dbf5-052d-4730-9409-2279666292f1.png)
+
+![image](https://user-images.githubusercontent.com/98612606/192157504-888fd727-3709-4d17-be04-cb4e388fc0e9.png)
+
+
+Land administrator can create landowner account and the account will be automatically sent to the landowner by the system through the phone number.
+<br />
+
+9. Change Password
+
+![image](https://user-images.githubusercontent.com/98612606/192157573-7e9844d9-c91a-409c-a028-8d98e51f551d.png)
+
+After receiving user credential for the web application, landowner can update their account password after inserting old password and new password. Password must match pattern of at least 1 uppercase, 1 lowercase, 1 digit and 1 special character.
+
+
+10. View Land Title
+
+![image](https://user-images.githubusercontent.com/98612606/192157605-56d77639-43d7-4ced-87fb-92ab6873cef9.png)
+
+Landowner can view the housing title that matches his/her identity number. It can also be printed and downloaded.
+
