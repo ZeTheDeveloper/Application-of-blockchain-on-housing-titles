@@ -14,6 +14,7 @@ Storing land titles into Hyperledger Fabric Network to ensure easy storing and v
 
 
 <h2> Node.js </h2>
+
 ![image](https://user-images.githubusercontent.com/98612606/192154658-87b7a79a-798a-49fe-b377-9831d5680732.png)
 
 Node.js is used as server to communicate with Hyperledger Farbic network through Fabric SDK and CouchDB for user authentication. Endpoints are configured in Node.js for various processes. (login, logout, store titles into blockchain etc.)
@@ -24,7 +25,7 @@ Node.js is used as server to communicate with Hyperledger Farbic network through
 
 ![image](https://user-images.githubusercontent.com/98612606/192146995-08c914c9-d2a6-4491-b066-42d8d52f58d1.png)
 
-Landowners and Land Administrator can login into their respective account after being authenticated and authorized. Users information are stored in CouchDB.
+Landowners and Land Administrator can login into their respective account after being authenticated and authorized. Users information are stored in CouchDB.<br />
 
 
 2. Update Profile
