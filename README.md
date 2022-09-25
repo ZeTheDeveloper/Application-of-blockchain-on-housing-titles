@@ -21,6 +21,7 @@ Node.js is used as server to communicate with Hyperledger Farbic network through
 
 
 <h2> Frontend </h2>
+
 Frontend is done with Angular.js. Services files are used to fetch and post to the endpoints. <br />
 
 1. Login 
