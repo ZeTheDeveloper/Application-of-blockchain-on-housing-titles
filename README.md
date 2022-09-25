@@ -25,3 +25,10 @@ Node.js is used as server to communicate with Hyperledger Farbic network through
 ![image](https://user-images.githubusercontent.com/98612606/192146995-08c914c9-d2a6-4491-b066-42d8d52f58d1.png)
 
 Landowners and Land Administrator can login into their respective account after being authenticated and authorized. Users information are stored in CouchDB.
+
+
+2. Update Profile
+
+![image](https://user-images.githubusercontent.com/98612606/192155371-5ce6a7a0-7619-4947-a9cd-1546d7354b77.png)
+
+Landowners and Land Administrator can update their user profile. The fields comes with relevant validation (required, email etc.)
